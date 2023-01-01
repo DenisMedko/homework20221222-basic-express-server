@@ -1,0 +1,11 @@
+POST http://localhost:5000/api/book
+Content-Type: application/json
+
+{
+  "name": "new book",
+  "year": 2023,
+  "pages": 500,
+  "author_id" : 1672610513721,
+  "genre_id" : 1672610542714,
+  "publisher_id": 1672610465814
+}

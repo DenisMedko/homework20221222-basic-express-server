@@ -1,0 +1,6 @@
+PUT http://localhost:5000/api/publisher/1672602832995
+Content-Type: application/json
+
+{
+  "name": "new publisher name"
+}
