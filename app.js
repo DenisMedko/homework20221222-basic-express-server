@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
-app.use(express.json());
-app.get('*', function (req, res) {
-    res.send('hello world '+JSON.stringify(req.body));
-});
 
+const bodyParcer = express.json();
+const rootRouter = require('./routes');
+
+app.use(bodyParcer, rootRouter);
 
 module.exports = app;
